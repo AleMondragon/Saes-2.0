@@ -1,2 +1,20 @@
-<app-header></app-header>
-<app-footer></app-footer>
+  <section class="moving-gradient text-gray-600 body-font h-screen flex items-center justify-center">
+    <div class="glow-effect pb-10 pt-10 pr-10 pl-10 rounded-lg shadow-lg w-full max-w-md">
+        <div class="usuario-info pt-20 pb-20">
+            <p><strong>Nombre Completo: Juan Perez</strong> {{ nombreCompleto }}</p>
+            <p><strong>Cumpleaños: 31/01/1990</strong> {{ cumpleanos }}</p>
+            <p><strong>Edad:34</strong> {{ edad }}</p>
+            <p><strong>Correo:</strong> <input type="text" [value]="correo"></p>
+            <p><strong>Género:</strong> <input type="text" [value]="genero"></p>
+            <p><strong>Número de Boleta:</strong> <input type="text" [value]="numeroBoleta"></p>
+            <p><strong>Escuela de Procedencia:</strong> <input type="text" [value]="escuelaProcedencia"></p>
+          </div>
+          <div class=" mt-10 flex justify-center">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+              Guardar Datos
+            </button>
+          </div>
+        </div>
+    
+  </section>
+  

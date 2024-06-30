@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 
@@ -10,5 +11,10 @@ import { FooterComponent } from "../footer/footer.component";
     imports: [HeaderComponent, FooterComponent]
 })
 export class DatosAcaComponent {
+    constructor(private router: Router) {}
+
+  navigateToUsuario() {
+    this.router.navigate(['/alumno']);
+  }
 
 }
