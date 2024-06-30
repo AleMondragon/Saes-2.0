@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
     imports: [HeaderComponent, FooterComponent]
 })
 export class PBienvenidaComponent {
-    router: any;
+  constructor(private router: Router) {}
     registro() {
         // Redirige a la ruta '/datos'
         this.router.navigate(['/registro']);

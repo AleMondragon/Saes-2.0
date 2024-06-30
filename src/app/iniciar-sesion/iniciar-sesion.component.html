@@ -1,41 +1,21 @@
-<app-header></app-header>
-<div class="flex justify-center">
-    <div class="flex flex-col justify-center items-center md:flex-row shadow rounded-xl max-w-7xl w-[90%]  m-2">
-        <div class=" w-full md:w-3/4">
-            <div class="text-xl cursor-pointer flex flex-col justify-center items-center mt-5 md:mt-0 py-4">
-
-                <h1 class="font-semibold text-xl md:text-5xl text-gray-600 m-2">Inicia Sesión</h1>
-                <div class="text-lg lg:text-xl text-center space-x-5 m-2">
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container">
+            <div class="floating-box">
+            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Iniciar Sesión</h2>
+            <div class="relative mb-4">
+              <label for="full-name" class="leading-7 text-sm text-gray-600">Número de boleta</label>
+              <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
-            <div class="flex flex-col justify-center items-center m-2 space-y-6 md:space-y-8">
-                <div class="">
-                    <input type="text" placeholder="Número de boleta"
-                        class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]">
-                </div>
-                <div class="">
-                    <input type="password" placeholder="Contraseña"
-                        class=" bg-gray-100 rounded-lg px-5 py-2 focus:border border-blue-600 focus:outline-none text-black placeholder:text-gray-600 placeholder:opacity-50 font-semibold md:w-72 lg:w-[340px]">
-                </div>
-
-            </div>
-            <div class="text-center mt-7">
-                <button
-                    class=" px-24 md:px-[118px] lg:px-[140px] py-2 rounded-md text-white bg-gradient-to-l from-blue-400 to-emerald-400  font-medium m-2 mb-6 ">Iniciar Sesión</button>
-            </div>
-            
+            <div class="relative mb-4">
+                <label for="password" class="leading-7 text-sm text-gray-600">Contraseña</label>
+                <input type="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            <button class="text-white bg-indigo-600 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Iniciar Sesión</button>
+            <p class="text-xs text-gray-500 mt-3">¿Aún no tienes cuenta?
+            <a routerLink="/registro" class="text-blue-500 hover:underline">Registrate</a>.
+            </p>
+          </div>
         </div>
-        <div
-            class="h-[100%] w-full md:w-1/3  bg-gradient-to-l from-blue-400 to-emerald-400  items-center flex justify-center">
-
-            <div class="text-white text-base font-semibold text-center my-10 space-y-2 m-2">
-                <h1 class="text-5xl">¿No tienes cuenta?</h1>
-                <h1 class="">Registrate aquí</h1>
-                <button class="bg-white rounded-2xl px-4 text-emerald-400 py-1">Registrate</button>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-<app-footer> </app-footer>
-
+      </section>
+    </body>
