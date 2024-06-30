@@ -1,0 +1,58 @@
+/* Contenedor principal para centrar el recuadro */
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #c32f27,#d8572a,#db7c26,#f7b538,#780116);
+    background-size: 600% 600%;
+    animation: gradientBackground 16s ease infinite;
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+/* Asegúrate de agregar estos estilos para que los íconos estén correctamente posicionados y ocultos */
+.hidden {
+    display: none;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77vh; /* Asegura que ocupe toda la altura de la ventana */
+  }
+  
+  /* Estilos para el recuadro con efecto flotante y luz */
+  .floating-box {
+    background-color: #f0f0f0; /* Color de fondo gris */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 40%; /* Ancho del recuadro */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 
+                0 0 20px rgba(237, 246, 249, 1);/* Sombras */
+    transform: translateY(-10px); /* Desplaza el recuadro hacia arriba */
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+  }
+  
+  /* Efecto flotante continuo */
+  @keyframes floating {
+    0%, 100% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+  
+  .floating-box {
+    animation: floating 3s ease-in-out infinite; /* Aplica la animación */
+  }
+  
