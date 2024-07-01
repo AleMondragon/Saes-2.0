@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 
 @Component({
@@ -9,16 +9,8 @@ import { Router } from '@angular/router';
     standalone: true,
     templateUrl: './pbienvenida.component.html',
     styleUrl: './pbienvenida.component.scss',
-    imports: [HeaderComponent, FooterComponent]
+    imports: [HeaderComponent, FooterComponent,RouterLink]
 })
 export class PBienvenidaComponent {
-  constructor(private router: Router) {}
-    registro() {
-        // Redirige a la ruta '/datos'
-        this.router.navigate(['/registro']);
-      }
-      inicio() {
-        // Redirige a la ruta '/horario'
-        this.router.navigate(['/iniciar']);
-      }
+  
 }

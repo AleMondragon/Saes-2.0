@@ -1,25 +1,23 @@
-
-<header class="text-gray-600 body-font">
+  <header class="text-gray-600 body-font">
     <div class="bg-gray-200 container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <button class="flex items-center justify-center border-0 p-0 focus:outline-none hover:bg-rose-200 rounded-full w-10 h-10">
-        <a href="http://localhost:4200/bienvenida">
-          <img src="https://cdn-icons-png.flaticon.com/128/3415/3415741.png" alt="Icono de Alumno" class="small-icon">
-        </a>
-        </button>
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" routerLink="/bienvenida">
+        <img src="https://cdn-icons-png.flaticon.com/128/3415/3415741.png" alt="Icono de Alumno" class="small-icon">
         <span class="ml-3 text-xl">AcademeConnect</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <button (click)="redirigirADatos()" class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Datos Académicos</button>
-        <button (click)="redirigirAHorario()" class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Horario</button>
-        <button (click)="redirigirACalif()" class="mr-5 hover:text-gray-900 hover:bg-rose-200  rounded-full px-2 py-1">Calificaciones</button>
-        <button (click)="redirigirAInsRei()" class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Inscripción/Reinscripción</button>
+        <a routerLink='/datos' class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Datos Académicos</a>
+        |
+        <a routerLink='/horario' class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Horario</a>
+        |
+        <a routerLink='/calificaciones' class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Calificaciones</a>
+        |
+        <a routerLink='/ins/reins' class="mr-5 hover:text-gray-900 hover:bg-rose-200 rounded-full px-2 py-1">Inscripción/Reinscripción</a>
       </nav>
-      <button class="flex items-center justify-center border-0 p-0 focus:outline-none hover:bg-rose-200 rounded-full w-10 h-10">
-        <a href="http://localhost:4200/usuario">
+      <a routerLink="/alumno" class="flex items-center justify-center border-0 p-0 focus:outline-none hover:bg-rose-200 rounded-full w-10 h-10">
         <img src="https://cdn-icons-png.flaticon.com/128/1177/1177568.png" alt="Icono de Alumno" class="w-full h-full rounded-full">
-        </a>
-    </button>
+      </a>
     </div>
   </header>
+  
+
+    

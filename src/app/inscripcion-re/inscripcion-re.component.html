@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="header sm:text-4xl text-3xl font-medium title-font mb-2 text-black">Inscripción</div>
+    <div class="info-card">
+      <div class="student-info">
+        <label>Nombre Completo:</label>
+        <div id="nombre-completo">{{ nombreCompleto }}</div>
+      </div>
+      <div class="student-info">
+        <label>Número de Boleta:</label>
+        <div id="numero-boleta">{{ numeroBoleta }}</div>
+      </div>
+      <div class="student-info">
+        <label>Carrera:</label>
+        <div id="carrera">{{ carrera }}</div>
+      </div>
+    </div>
+    <div class="subjects-selection">
+      <table>
+        <thead>
+          <tr>
+            <th>Materia</th>
+            <th>Grupo</th>
+            <th>Turno</th>
+            <th>Horario</th>
+            <th>Profesor</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matemáticas</td>
+                <td>
+                  <select id="grupo-matematicas" (change)="updateGrupo('matematicas', $event)">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </td>
+                <td>
+                  <select id="turno-matematicas" (change)="updateTurno('matematicas', $event)">
+                    <option>Matutino</option>
+                    <option>Vespertino</option>
+                  </select>
+                </td>
+                <td id="horario-matematicas">8:00 - 10:00</td>
+                <td id="profesor-matematicas">Dr. García</td>
+              </tr>
+              <tr>
+                <td>Programación</td>
+                <td>
+                  <select id="grupo-programacion" (change)="updateGrupo('programacion', $event)">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+                </td>
+                <td>
+                  <select id="turno-programacion" (change)="updateTurno('programacion', $event)">
+                    <option>Matutino</option>
+                    <option>Vespertino</option>
+                  </select>
+                </td>
+                <td id="horario-programacion">10:00 - 12:00</td>
+                <td id="profesor-programacion">Ing. López</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="finalize-button">
+        <button (click)="finalizarInscripcion()" class="bg-blue-500 text-white px-4 py-2 rounded">Finalizar Inscripción</button>
+      </div>
+    </div>

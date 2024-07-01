@@ -1,41 +1,51 @@
-.moving-gradient {
-    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
-    background-size: 800% 800%;
-    animation: gradientAnimation 10s ease infinite;
+.container {
+  background: linear-gradient(135deg, #fb6107, #f3de2c,#7cb518,#5c8001,#fbb02d);
+  margin: 0;
+  height: 100vh;
+  background-size: 600% 600%;
+  animation: gradientBackground 16s ease infinite;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background-color: rgba(255, 248, 240, 1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 248, 240, 1);
+  margin-bottom: 20px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.student-info {
+  margin-bottom: 50px;
+}
+
+.subjects-selection table {
+  width: 100%;
+  margin-bottom: 180px;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.finalize-button {
+  text-align: center;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
-  
-  .glow-effect {
-    background: white;
-    position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow-y: auto; /* Habilita la barra de desplazamiento vertical si es necesario */
-    max-height: calc(100vh - 100px); /* Ajusta la altura máxima del recuadro */
-    padding: 20px; /* Padding adicional */
+  100% {
+    background-position: 0% 50%;
   }
-  
-  .glow-effect::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: rgba(255, 255, 255, 0.1);
-    filter: blur(20px);
-    z-index: -1;
-    border-radius: inherit;
-  }
+}
+
   
